@@ -1,0 +1,308 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>PETA - Penyajian Data</title>
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="boostrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <script>
+      window.onload= function awal(){
+        document.getElementById("nalar3").hidden=true;
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">PETA</a>
+      
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item ">
+                <a data-toggle="collapse" class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  <a class="nav-link dropdown-toggle active" href="#">
+                    <span data-feather="bar-chart-2"></span>
+                  Data
+                  </a>
+
+                  <ul style="list-style: none;">
+                    <a href="data.html" style="color: black;"> <li class="nav-link coba active">Mengenal Data</li></a>
+                    <a href="kuis_1/latihan.html" style="color: black;"> <li class="">Kuis</li></a>
+                  </ul>
+
+                </a>
+             </li>
+              <li class="nav-item ">
+                <a class="nav-link dropdown-toggle " href="#">
+                  <span data-feather="columns"></span>
+                  Tabel
+                </a>
+                <ul style="list-style: none;">
+                  <a href="tabelbariskolom.html" style="color: black;"> <li class="">Baris Kolom</li></a>
+                  <a href="tabelkontingensi.html" style="color: black;"> <li class="">Kontingensi</li></a>
+                  <a href="tabelfrekuensi.html" style="color: black;"> <li class="">Distribusi Frekuensi</li></a>
+                  <a href ="loginkuistabel.html" style="color:black"><li class="">Kuis</li></a>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Diagram
+                </a>
+                <ul style="list-style: none;">
+                  <a href ="diagrambatang.html" style="color:black"> <li class="">Diagram Batang</li></a>
+                  <a href ="diagramgaris.html" style="color:black"> <li class="">Diagram Garis</li></a>
+                  <a href ="diagramlingkaran2.html" style="color:black"> <li class="">Diagram Lingkaran</li></a>
+                  <a href ="kuis_diagram/latihan_diagram.html" style="color:black"><li class="">Kuis</li></a>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link dropdown-toggle" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Evaluasi
+                </a>
+                <ul style="list-style: none;">
+                <a href ="kuis_evaluasi/latihan_evaluasi.html" style="color:black"><li class="">Evaluasi</li></a>
+                </ul>
+             </li>              
+            </ul>            
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2" style="font-family: Apple Chancery, cursive;">Mengenal Data</h1>
+          </div>
+          <div class="row">
+            <div id="kontenkiri"  class="col-sm">
+              <p style="font-size: 30px;background-color: #04aa6d;color: whitesmoke;text-align: center;">DATA</p>
+              <div id="kotak" style="padding-left:20px;">Tujuan Pembelajaran</div>
+                <div class="isko" >
+                    <ul>
+                      <li>Siswa dapat membedakan jenis data</li>
+                      <li>Siswa dapat menentukan cara mengumpulkan data</li>
+                    </ul>
+                </div>
+                <br>
+              <p style="text-indent: 30px;">Sebelum menyajikan data, kalian harus tahu dulu apa itu data. kata "data" berasal dari bahasa inggris bersifat majemuk. Datum adalah keterangan atau informasi yang diperoleh dari suatu obyek/kejadian atau narasumber. Sedangkan data adalah adalah kumpulan dari datum. 
+              </p>
+              <p>Ada tiga cara untuk mengumpulkan data, yaitu
+                <ol>
+                  <li>Wawancara (interview) : cara mengumpulkan data dengan mengajukan
+                  pertanyaan secara langsung kepada narasumber.</li>
+                  <a style="color: #04AA6D;font-family:Apple Chancery, cursive ">Contoh:</a>
+                  <p>
+                    Data tentang keadaan dan kondisi satu keluarga yang tinggal di daerah perkotaan yang sangat padat dan satu keluarga yang tinggal di
+                    daerah pedesaan, maka kalian dapat mendatangi kedua keluarga tersebut dan melakukan wawancara langsung kepada anggota keluarga di masing-masing daerah tersebut.
+                  </p>
+                  <li>Kuesioner (angket) : cara mengumpulkan data dengan mengirim daftar
+                  pertanyaan kepada narasumber.</li>
+                  <a style="color: #04AA6D;font-family:Apple Chancery, cursive ">Contoh:</a>
+                  <p>
+                    Data tentang kegemaran siswa smp kelas 7 , jumlah siswa yang gemar sepak bola, jumlah siswa gemar basket, jumlah siswa yang gemar badminton, dan jumlah siswa yang gemar menari. 
+                  </p>
+                  <li>Observasi (pengamatan) adalah cara mengumpulkan data dengan
+                  mengamati obyek atau kejadian</li>
+                  <a style="color: #04AA6D;font-family:Apple Chancery, cursive ">Contoh:</a>
+                  <p>
+                    Data tentang tinggi badan siswa dalam satu kelas, kalian dapat melakukan pengamatan dari kegiatan pengukuran tinggi badan masing-masing siswa dalam satu kelas
+                  </p>
+                </ol> 
+              </p>
+              <p>Berdasarkan cara memperoleh, data terbagi menjadi dua, sebagai berikut</p>
+                <ol>
+                  <li><b>Data primer</b> adalah data yang diperoleh secara langsung dari sumbernya.
+                    <p>Contoh: Data tinggi badan dengan melakukan pengamatan pengukuran tinggi badan siswa
+                    </p>
+                  </li>
+                  <li><b>Data sekunder</b> adalah data yang diperoleh secara tidak langsung (diperoleh
+                  dari pihak lain)
+                  <p>
+                    Contoh: Data banyaknya siswa SMP dalam satu kabupaten dari Dinas Pendidikan melalui koran .
+                  </p>                  
+                  </li>
+                  <p>Biasanya Data dapat disajikan dalam bentuk <a href="#Tabel1" onclick="tampil()">Tabel</a> dan
+                    <a href="#Gambar1"onclick="tampil2()">Diagram</a>.                                      
+                  </p>
+                </ol>
+                <center>    
+                  <p style="background-color: #04AA6D;color: whitesmoke;font-size: 20px;text-align: center;">AYO MENALAR</p>
+                </center>
+                <div class="card mt-2 pl-3 pr-3 pt-4" style="width: 100%">   
+                  <div>
+                    <ol>
+                        <li>Jawablah pertanyaan di bawah ini dengan mengklik salah satu jawaban yang dianggap paling benar
+                        </li>
+                        <li>Setelah semua pertanyaan terjawab, klik tombol <b>"Periksa Jawaban"</b>. Maka disamping soal akan tampil keterangan jawaban <span class="benar-b">benar</span> atau <span class="salah-b">salah</span> dan muncul keterangan jumlah jawaban benar dan salah serta skor jawaban.
+                        </li>
+                        <li>Klik tombol <b>"Coba Lagi"</b> untuk mengulang jawaban pada soal.</li>
+                    </ol>
+                  </div>                                   
+                    <div style="border-color: #04AA6D; border-style: groove; padding: 5px;">
+                    <div class="container akv">
+                    <p class="isi-akv"></p>
+                    <p class="text-justify akv__p"></p>
+                    
+                    <form name="quiz">
+                      <ol>
+                          <li>
+                            Cara apa yang paling tepat untuk memperoleh data tentang jarak rumah semua siswa ke sekolah, alat transportasi apa yang paling banyak digunakan siswa untuk berangkat sekolah dan jam berapa siswa berangkat dari rumah ?
+                              <span id="ket-no0"> </span>
+                          </li>
+                          <blockquote style="font-family:Apple Chancery, cursive ;">
+                          <input type="radio" name="q1" value="a"> a. Wawancara<br>
+                          <input type="radio" name="q1" value="b"> b. Kuesioner<br>
+                          <input type="radio" name="q1" value="c"> c.	Observasi <br>
+                          </blockquote>
+                          <li>
+                            Soal nomor 1 Termasuk data primer atau sekunder ? 
+                            <span id="ket-no1"></span>
+                          </li>
+                          <blockquote style="font-family:Apple Chancery, cursive ;">
+                          <input type="radio" name="q2" value="a"> a. Data Primer<br>
+                          <input type="radio" name="q2" value="b"> b.	Data Sekunder <br>
+                          <input type="radio" name="q2" value="c"> c.	Semua Benar <br>
+                          </blockquote>
+                          <li>
+                            Cara apa yang paling tepat untuk memperoleh data tentang tinggi badan semua siswa di kelasmu adalah ...
+                            <span id="ket-no2"> </span>
+                          </li>
+                          <blockquote style="font-family:Apple Chancery, cursive ;">
+                          <input type="radio" name="q3" value="a"> a. Wawancara <br>
+                          <input type="radio" name="q3" value="b"> b. Kuesioner <br>
+                          <input type="radio" name="q3" value="c"> c.	Observasi <br>
+                          </blockquote>
+                          <li>
+                            Bahrul memperoleh data tentang perkembangan nilai tukar rupiah terhadap Dolar dalam satu minggu terakhir dari Badan Pusat Statistika melalui koran. Data yang diperoleh Bahrul tersebut adalah ...
+                            <span id="ket-no3"> </span>
+                          </li>
+                          <blockquote style="font-family:Apple Chancery, cursive ;">
+                            <input type="radio" name="q4" value="a"> a. Data Primer<br>
+                            <input type="radio" name="q4" value="b"> b. Data Sekunder <br>
+                            <input type="radio" name="q4" value="c"> c. Data Tunggal <br>
+                          </blockquote>
+                      </ol>
+                      <p id="ket" class="center ket-jwbn"></p>
+                        <div class="left ket2" id="ket2">
+                        </div>
+                      </p>
+                      <center>
+                        <div class="center">
+                            <input type="button" style="background-color: #04AA6D;color: white;font-family:Apple Chancery, cursive ;" value="Periksa Jawaban " onclick="getScore(this.form);">
+                            <input id="reset" type="reset" style="background-color: #04AA6D;color: white;font-family:Apple Chancery, cursive ;" value="Coba Lagi">
+                        </div>
+                      </center>
+                    </form>
+
+              </div>
+              </div>
+              </div>
+              <br><br>
+                         
+                 
+            </div>
+            <div id="kontenkanan" class="col-sm" >              
+            <div id="menampilkan" style="display: none;">
+             <b><p style="text-align: center;font-style: italic;">Tabel 1. Contoh Data Bentuk Tabel</p></b>
+              <br>
+              <div class="table-responsive">
+                <center>
+                <table style="border-top: 1px solid black;border-bottom: 1px solid black;border-left: 1px solid black;border-right: 1px solid black;">
+                  <thead style="text-align: center;background-color: #04AA6D;color:whitesmoke">
+                    <tr style="border-top: 1px solid black;">
+                      <th>No</th>
+                      <th style="border-right: 1px solid black;border-left: 1px solid black;">Berat Badan</th>
+                      <th style="border-right: 1px solid black;">Frekuensi</th>
+                    </tr>
+                  </thead>
+                  <tbody style="text-align: center;">
+                    <tr style="border-top: 1px solid black">                      
+                      <td>1</td>
+                      <td style="border-right: 1px solid black;border-left: 1px solid black;">40</td>
+                      <td style="border-right: 1px solid black;">6</td>                      
+                    </tr>
+                    <tr style="border-top: 1px solid black;">                      
+                      <td>2</td>
+                      <td style="border-right: 1px solid black;border-left: 1px solid black;">41</td>
+                      <td style="border-right: 1px solid black;">12</td>                      
+                    </tr>
+                    <tr style="border-top: 1px solid black;">                      
+                      <td>3</td>
+                      <td style="border-right: 1px solid black;border-left: 1px solid black;">42</td>
+                      <td style="border-right: 1px solid  black;">15</td>                      
+                    </tr>
+                    <tr style="border-top: 1px solid black;">                      
+                      <td>4</td>
+                      <td style="border-right: 1px solid black;border-left: 1px solid black;">43</td>
+                      <td style="border-right: 1px solid black;">18</td>                      
+                    </tr>
+                    <tr style="border-top: 1px solid black;">                      
+                      <td>5</td>
+                      <td style="border-right: 1px solid black;border-left: 1px solid black;">44</td>
+                      <td style="border-right: 1px solid black;">9</td>
+                    </tr>                    
+                  </tbody>
+                </table>
+              </center>                            
+            </div>
+            </div>
+            <br><br>
+              <div id="menampilkan2" style="display: none;">
+              <b><p style="font-style: italic;text-align: center;">Gambar 1. Contoh Data Bentuk Diagram</p></b>
+              <br>
+              <center>
+              <img src="./contohdiagram.jpg" width="80%" alt=""id="Gambar1">
+              </center>
+              </div>  
+          </div>          
+        </main>
+      </div>  
+    </div>
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+    <script>
+      function tampil(){
+        document.getElementById("menampilkan").style.display="block";
+      }
+    </script>
+    <script>
+      function tampil2(){
+        document.getElementById("menampilkan2").style.display="block";
+      }
+    </script>
+    <script src="kuisdata.js"></script>
+    
+  </body>
+  <footer>
+    <br>
+    <center style="margin-right: 50px;margin-left:20px;">
+    <a href="haldep.html"><button class="tombol" style="background-color: #04AA6D;color: white;">Sebelumnya</button></a>  
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="kuis_1/latihan.html"><button class="tombol" style="float: right;margin-right:200px;background-color: #04AA6D;color: whitesmoke;">Selanjutnya</button></a>
+    </center>
+  </footer>
+</html>

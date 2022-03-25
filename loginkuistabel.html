@@ -1,0 +1,141 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>Jianda - Penyajian Data</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="boostrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="haldep.html">PETA</a>      
+    </nav>
+
+    <!-- <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item ">
+                <a data-toggle="collapse" class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  <a class="nav-link dropdown-toggle " href="#">
+                    <span data-feather="bar-chart-2"></span>
+                  Data
+                  </a>
+                  <ul style="list-style: none;">
+                    <a href="data.html" style="color: black;"> <li class="">Mengenal Data</li></a>
+                    <a href="loginkuis.html" style="color: black;"> <li class="">Kuis</li></a>
+                  </ul>
+                </a>
+             </li>
+              <li class="nav-item ">
+                <a class="nav-link dropdown-toggle active" href="#">
+                  <span data-feather="columns"></span>
+                  Tabel
+                </a>
+                <ul style="list-style: none;">
+                  <a href="tabelbariskolom.html" style="color: black;"> <li class="">Tabel Baris Kolom</li></a>
+                  <a href="tabelkontingensi.html" style="color: black;"> <li class="">Tabel Kontingensi</li></a>
+                  <a href="tabelfrekuensi.html" style="color: black;"> <li class="">Tabel Distribusi Frekuensi</li></a>
+                  <a href ="loginkuistabel.html" style="color:black"><li class="nav-link coba active">Kuis</li></a>
+                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Diagram
+                </a>
+                <ul style="list-style: none;">
+                  <a href ="diagrambatang.html" style="color:black"> <li class="">Diagram Batang</li></a>
+                  <a href ="diagramgaris.html" style="color:black"> <li class="">Diagram Garis</li></a>
+                  <a href ="diagramlingkaran.html" style="color:black"> <li class="">Diagram Lingkaran</li></a>
+                  <a href ="loginkuis.html" style="color:black"><li class="">Kuis</li></a>
+                  
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a data-toggle="collapse" class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  Evaluasi<span class="sr-only"></span>
+                </a>
+             </li>
+              
+            </ul>
+
+            
+          </div>
+        </nav> -->
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">          
+          </div>
+          <div class="row">            
+                <div class="petunjukeval" style="line-height: 1.5; border: solid 5px black;">
+                    <h5 class="text-center" style="font-family: Apple Chancery, cursive">Petunjuk Pengerjaan:</h5>
+                    <ol>
+                        <li>Masukkan "<b>Nama Siswa</b>" "<b>Sekolah</b>" dan "<b>Kelas</b>" </li>
+                        <li>Pada bagian kiri laman terdapat navigasi nomor soal yang apabila di klik atau tekan maka akan
+                            menampilkan soal berdasarkan nomor soal yang di klik.</li>
+                        <li>Jumlah soal sebanyak 5 butir berupa isian. </li>
+                        <li>Setelah semua pertanyaan selesai dijawab, klik atau tekan tombol "<b style="color:red">Selesai</b>""
+                            pada soal nomor 5.</li>                        
+                    </ol>                
+                </div>            
+                    <br><br>
+                    <div style="margin-top:50px;border: solid 5px black; text-align: center;width:90%;padding: 40px;">
+                <form style="font-family: Apple Chancery, cursive">
+                  <label for="nama"> Nama :
+                    <input type="text" id="nama" class="maju" placeholder="Masukkan nama siswa . . . ">
+                  </label><br>
+                  <label for="nama"> Sekolah :
+                    <select id="sekolah" name="sekolah" class="mundur" aria-placeholder="-PILIH SEKOLAH-">
+                        <option value="0" selected="selected">-- PILIH SEKOLAH --</option>
+                        <option value="1">SMP Negeri 24 Banjarmasin</option>                                                          
+                    </select>
+                  </label><br>
+                  <label for="nama"> Kelas :
+                    <select id="kelas" name="kelas" class="maju aaa" aria-placeholder="-PILIH SEKOLAH-">
+                        <option value="0" selected="selected">-- PILIH KELAS --</option>
+                        <option value="1">7A</option>
+                        <option value="2">7B</option>
+                        <option value="3">7C</option>
+                        <option value="4">7D</option>                                    
+                    </select>
+                  </label>
+                </form>
+                <br><br>
+                <center >
+                  <a href="tabelbariskolom.html" onclick="dua()"><button class="tombol">Kembali Ke Materi</button></a>
+                  <a href="kuistabel.html" onclick="dua()"><button class="tombol" >Mulai</button></a>
+                <br>
+                </center>
+                </div>                      
+            </div>                        
+          </div>                    
+        </main>        
+      </div>      
+    </div>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+  </body>
+  
+</html>

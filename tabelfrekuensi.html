@@ -1,0 +1,409 @@
+
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+    
+        <title>PETA - Penyajian Data</title>
+    
+      
+    
+        <!-- Bootstrap core CSS -->
+        <link href="boostrap.min.css" rel="stylesheet">
+    
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+
+        <script>
+          window.onload= function awal(){
+            document.getElementById("nalar2").hidden=true;
+          }
+        </script>
+
+      </head>
+    
+      <body>
+        <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+          <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">PETA</a>
+          
+        </nav>
+    
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+              <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                  <li class="nav-item ">
+                    <a data-toggle="collapse" class="nav-link" href="#">
+                      <span data-feather="file"></span>
+                      <a class="nav-link dropdown-toggle" href="#">
+                        <span data-feather="bar-chart-2"></span>
+                      Data
+                      </a>
+                      <ul style="list-style: none;">
+                        <a href="data.html" style="color: black;"> <li class="">Mengenal Data</li></a>
+                        <a href="kuis_1/latihan.html" style="color: black;"> <li class="">Kuis</li></a>
+                      </ul>
+                    </a>
+                 </li>
+                  <li class="nav-item ">
+                    <a class="nav-link dropdown-toggle active" href="#">
+                      <span data-feather="columns"></span>
+                      Tabel
+                    </a>
+                    <ul style="list-style: none;">
+                      <a href="tabelbariskolom.html" style="color: black;"> <li class="">Baris Kolom</li></a>
+                      <a href="tabelkontingensi.html" style="color: black;"> <li class="">Kontingensi</li></a>
+                      <a href="tabelfrekuensi.html" style="color: rgb(71, 181, 196);"> <li class="nav-link coba active">Distribusi Frekuensi</li></a>
+                      <a href ="loginkuistabel.html" style="color:black"><li class="">Kuis</li></a>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#">
+                      <span data-feather="bar-chart-2"></span>
+                      Diagram
+                    </a>
+                    <ul style="list-style: none;">
+                        <a href ="diagrambatang.html" style="color:black"> <li class="">Diagram Batang</li></a>
+                        <a href ="diagramgaris.html" style="color:black"> <li class="">Diagram Garis</li></a>
+                        <a href ="diagramlingkaran2.html" style="color:black"> <li class="">Diagram Lingkaran</li></a>
+                        <a href ="kuis_diagram/latihan_diagram.html" style="color:black"><li class="">Kuis</li></a>
+                    </ul>
+                  </li>
+                  <li class="nav-item ">
+                    <a data-toggle="collapse" class="nav-link" href="#">
+                      <span data-feather="file"></span>
+                      Evaluasi<span class="sr-only"></span>
+                    </a>
+                    <ul style="list-style: none;">
+                      <a href ="kuis_evaluasi/latihan_evaluasi.html" style="color:black"><li class="">Evaluasi</li></a>
+                    </ul>
+                 </li>                  
+                </ul>                    
+              </div>
+            </nav>    
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2" style="font-family: Apple Chancery, cursive;">Menyajikan Data dalam Bentuk Tabel</h1>             
+              </div>
+              <div class="row">
+                <div id="kontenkiri"  class="col-sm">
+                  <p style="background-color: #04AA6D;color: whitesmoke;text-align: center;font-size: 30px;">
+                    TABEL DISTRIBUSI FREKUENSI
+                  </p>
+                  <div id="kotak" style="padding-left:20px;">Tujuan Pembelajaran
+                  </div>
+                  <div class="isko" >
+                    <ul><li>Siswa dapat menyajikan data dalam bentuk tabel</li></ul>
+                  </div>                     
+                        <p style="text-indent: 30px;">Tabel ini digunakan untuk data yang dibagi menjadi <b>beberapa kelompok </b>.
+                            Tabel ini digunakan untuk data yang dikelompokkan dalam suatu <b>interval/selang nilai</b>. Setiap interval nilai memiliki frekuensi (banyak data). Biasanya, kalau data yang kamu peroleh itu cukup banyak, kamu bisa menyajikannya dalam tabel ini agar bentuknya jadi lebih sederhana. Lihat contoh tabel distribusi frekuensi seperti <a href ="#Tabel4" onclick="tampil()">tabel</a> disamping.
+                        </p>
+                        
+                      <center>    
+                          <p style="background-color: #04AA6D;color: whitesmoke;font-size: 20px;text-align: center;">AYO MENALAR</p>
+                      </center>
+
+                        <p>
+                          Jika diketahui data nilai ulangan harian dari 27 siswa adalah sebagai berikut.
+                        </p>
+                        <table class="table table-striped table-sm">
+                          <tbody style="text-align: center;">
+                            <tr>
+                              <td>58</td>
+                              <td>48</td>
+                              <td>42</td>
+                              <td>58</td>
+                              <td>69</td>
+                              <td>72</td>
+                              <td>58</td>
+                              <td>63</td>
+                              <td>52</td> 
+                            </tr> 
+                            <tr>
+                              <td>51</td>
+                              <td>76</td>
+                              <td>51</td>
+                              <td>70</td>
+                              <td>58</td>
+                              <td>55</td>
+                              <td>60</td>
+                              <td>45</td>
+                              <td>50</td> 
+                            </tr>
+                            <tr>
+                              <td>48</td>
+                              <td>53</td>
+                              <td>65</td>
+                              <td>58</td>
+                              <td>61</td>
+                              <td>55</td>
+                              <td>62</td>
+                              <td>61</td>
+                              <td>48</td> 
+                            </tr>                           
+                          </tbody>
+                        </table>
+
+                  <p>Untuk mengerjakan soal diatas silahkan klik <a style="color: green;" href ="#Tabel4" onclick="tampil2()">KERJAKAN</a>                    
+                  </p>                  
+                                  
+                </div>
+                <div id="kontenkanan" class="col-sm" >
+                  <div id="menampilkan3" style="display: none;">
+                  <b><center><p style="font-style: italic;text-align: center;">Tabel 4. Nilai Ulangan Harian Matematika</p> </center></b>
+                  <center>
+                  <div class="table-responsive">
+                    <table style="border-right: 1px solid black;border-left: 1px solid black;border-top: 1px solid black;border-bottom: 1px solid black;">
+                      <thead style="text-align: center;">
+                        <tr style="border-top: 1px solid black;">                          
+                          <th style="background-color: #04AA6D;color: whitesmoke;border-right: 1px solid black;">Nilai</th>
+                          <th style="background-color: #04AA6D;color: whitesmoke;">Frekuensi</th>                          
+                        </tr>
+                      </thead>
+                      <tbody style="text-align: center;">
+                        <tr style="border-top: 1px solid black;">                         
+                          <td style="border-right: 1px solid black;">51-60</td>
+                          <td>30</td>                          
+                        </tr>
+                        <tr style="border-top: 1px solid black;">                         
+                          <td style="border-right: 1px solid black;">61-70</td>
+                          <td>40</td>                          
+                        </tr>
+                        <tr style="border-top: 1px solid black;">
+                          <td style="border-right: 1px solid black;">71-80</td>
+                          <td>8</td>                          
+                        </tr>
+                        <tr style="border-top: 1px solid black;">                         
+                            <td style="border-right: 1px solid black;">81-90</td>
+                            <td>14</td>                           
+                        </tr>
+                        <tr style="border-top: 1px solid black;">
+                          <td style="border-right: 1px solid black;">91-100</td>
+                          <td>8</td>
+                        </tr>                                                  
+                      </tbody>
+                    </table>
+                  </center>
+                    <br>                 
+                </div>
+                <div id="menampilkan2" style="display: none;">
+                  <div style="border-color: solid black;border-style: groove;">
+                    <ol>
+                      <p style="color: red;">Petunjuk:</p>
+                      <li>Isi semua kolom dibawah dengan jawaban yang dianggap benar sesuai pertanyaan disebelah kiri </li>
+                      <li>Kemudian klik periksa jawaban</li>
+                      <li>Jika kolom berwarna <a style="color:green">hijau</a>, maka jawaban <b>benar</b></li>
+                      <li>Jika kolom berwarna <a style="color:red">merah</a>, maka jawaban <b>salah</b></li>
+                      <li>Klik ulang, jika ingin mengulang menjawab </li>
+                    </ol>
+                  </div>
+                  <br>
+                  <p style="color: whitesmoke;background-color:#04AA6D;font-family: Apple Chancery, cursive;">Tentukan Nilai Tertinggi dan Nilai Terendah :</p> 
+                  <div>
+                    <span style="color: #04AA6D;font-family: Apple Chancery, cursive;">Nilai Tertinggi</span>
+                    <span style><input id="nilaitertinggi" type="text"></span>
+                  </div><br>                   
+                  <div>
+                    <span style="color: #04AA6D;font-family: Apple Chancery, cursive;">Nilai Terendah</span>
+                    <span><input id="nilaiterendah" type="text"></span>
+                  </div>
+                  <br>                   
+                  <center>
+                    <button class style="background-color:#04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;"button-pertanyaan" onclick="cek()">Periksa Jawaban</button>
+                    <!-- <p id="tampil"></p> -->
+    
+                    <button class style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;"button-pertanyaan" onclick="Ulang()">Ulang</button>
+                    <br><br>
+                  </center>
+
+                  <p style="color: whitesmoke;background-color: #04AA6D;font-family: Apple Chancery, cursive;">Rumus Jangkauan (N) = Nilai tertinggi - Nilai terendah</p>
+                  <div>
+                    <span style="color: #04AA6D;font-family: Apple Chancery, cursive;">Jangkauan </span>
+                    =
+                    <input style="width:50px" id="niting" type="text"> 
+                          -
+                    <input style="width:50px" id="nirend" type="text">
+                  </div>
+                  <br>
+                  <div>
+                    <span style="color: #04AA6D;font-family: Apple Chancery, cursive;">Jangkauan</span>
+                    =
+                    <input style="width:50px" id="hasil" type="text">
+                  </div>
+                  <br>
+                  <center>
+                    <button class style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;"button-pertanyaan" onclick="cek3()">Periksa Jawaban</button>
+                    <!-- <p id="tampil"></p> -->
+    
+                    <button class style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;"button-pertanyaan" onclick="Ulang3()">Ulang</button>
+                    <br><br>
+                  </center>
+
+                  <p style="color: #04AA6D;font-family: Apple Chancery, cursive;">Rumus Banyak Kelas = 1 + 3.3 log N </p>
+                  <div>
+                    <span style="color: #04AA6D;font-family: Apple Chancery, cursive;">Banyak Kelas= 1 </span>
+                          +
+                    <span style="color: #04AA6D;font-family: Apple Chancery, cursive;">3.3 </span>
+                    <span style="color:#04AA6D;font-family: Apple Chancery, cursive;">Log</span>
+                    <input style="width:50px" id="n" type="text">
+                    <br>
+                    <br>
+                  </div>
+                  <div>
+                      <span style="color: #04AA6D;font-family: Apple Chancery, cursive;">Banyak Kelas= 1 </span>
+                            +
+                      <span style="color: #04AA6D;font-family: Apple Chancery, cursive;">3.3 </span>
+                      <input style="width:50px" id="hasillogn" type="text">
+                  </div>                 
+                  <br>
+                  <div>
+                    <span style="color: #04AA6D;font-family: Apple Chancery, cursive;">Banyak Kelas</span>
+                    =
+                    <input style="width:50px" id="hasilbakel" type="text">
+                  </div>
+                  <br>
+                  <center>
+                    <button class style="background-color:#04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;" button-pertanyaan" onclick="cek4()">Periksa Jawaban</button>
+                    <!-- <p id="tampil"></p> -->
+    
+                    <button class style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;" button-pertanyaan" onclick="Ulang4()">Ulang</button>
+                    <br><br>
+                  </center>
+                  <p style="color: whitesmoke;background-color: #04AA6D;font-family: Apple Chancery, cursive;">Rumus Panjang Interval Kelas = Jangkauan (N) / Banyak kelas</p>
+                  <div>
+                    <span style="color: #04AA6D;font-family: Apple Chancery, cursive;">Panjang Interval Kelas= </span>
+                    <input style="width:50px" id="jangkauan" type="text"> 
+                          /
+                    <input style="width:50px" id="bakel" type="text">
+                  </div>
+                  <br>
+                  <div>
+                    <span style="color: #04AA6D;font-family: Apple Chancery, cursive;">Panjang Interval Kelas</span>
+                    =
+                    <input style="width:50px" id="hasilinterval" type="text">
+                  </div>
+                  <br>
+                  <center>
+                    <button class style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;" button-pertanyaan onclick="cek5()">Periksa Jawaban</button>
+                    <!-- <p id="tampil"></p> -->
+    
+                    <button class style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;" button-pertanyaan onclick="Ulang5()">Ulang</button>
+                    <br><br>
+                  </center>
+                  <br>
+                  <table class="table table-striped table-sm">
+                    <thead style="text-align: center;">
+                      <tr style="font-family: Apple Chancery, cursive;">
+                        <th style="background-color: #04AA6D;color: whitesmoke;"><center>Nilai</center></th>
+                        <th style="background-color: #04AA6D;color: whitesmoke;"><center>Frekuensi</center></th>
+                      </tr>
+                      <tr>
+                        <th> 
+                          <input style="width:50px" id="tabel11" type="text"> 
+                          -
+                          <input style="width:50px" id="tabel12" type="text">  
+                        </th>
+                        <th> <input style="width:50px"  id="tabel13" type="text"></th>
+                      </tr>
+                      <tr>
+                        <th> 
+                          <input style="width:50px" id="tabel21" type="text"> 
+                          -
+                          <input style="width:50px" id="tabel22" type="text">  
+                        </th>
+                        <th> <input style="width:50px"  id="tabel23" type="text"></th>
+                      </tr>
+                      <tr>
+                        <th> 
+                          <input style="width:50px" id="tabel31" type="text"> 
+                          -
+                          <input style="width:50px" id="tabel32" type="text">  
+                        </th>
+                        <th> <input style="width:50px"  id="tabel33" type="text"></th>
+                      </tr>
+                      <tr>
+                        <th> 
+                          <input style="width:50px" id="tabel41" type="text"> 
+                          -
+                          <input style="width:50px" id="tabel42" type="text">  
+                        </th>
+                        <th> <input style="width:50px"  id="tabel43" type="text"></th>
+                      </tr>
+                      <tr>
+                        <th> 
+                          <input style="width:50px" id="tabel51" type="text"> 
+                          -
+                          <input style="width:50px" id="tabel52" type="text">  
+                        </th>
+                        <th> <input style="width:50px"  id="tabel53" type="text"></th>
+                      </tr>
+                      <tr>
+                        <th> 
+                          <input style="width:50px" id="tabel61" type="text"> 
+                          -
+                          <input style="width:50px" id="tabel62" type="text">  
+                        </th>
+                        <th> <input style="width:50px"  id="tabel63" type="text"></th>
+                      </tr>
+    
+                    </thead>
+                    </table>
+                    
+                    <center>
+                      <button class style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;"button-pertanyaan onclick="cek2()">Periksa Jawaban</button>
+                      <!-- <p id="tampil"></p> -->
+      
+                      <button class style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;"button-pertanyaan onclick="Ulang2()">Ulang</button>
+                      <br><br>
+                    </center>
+                </div>
+              </div>
+              </div>                            
+            </main>            
+          </div>          
+        </div>
+        
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
+          
+        <script src="pertanyaan3.js"></script>
+    
+        <!-- Icons -->
+        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+        <script>
+          function tampil(){
+            document.getElementById("menampilkan3").style.display="block";
+          }
+        </script>
+        <script>
+          function tampil2(){
+            document.getElementById("menampilkan2").style.display="block";
+          }
+        </script>
+       
+        <script>
+          feather.replace()
+        </script>    
+      </body>
+      <footer>
+        <br>
+      <center style="margin-right: 50px;margin-left:20px;">
+      <a href="tabelkontingensi.html"><button class="tombol" style="background-color: #04AA6D;color: white;">Sebelumnya</button></a>
+  
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="kuistabel.html"><button class="tombol" style="float: right;margin-right:200px;background-color: #04AA6D;color: white;">Selanjutnya</button></a>
+      </center>
+      </footer>
+    </html>
+    
+  

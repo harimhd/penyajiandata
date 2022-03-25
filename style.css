@@ -1,0 +1,304 @@
+
+
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: relative;
+  background-color: #04AA6D;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: white;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 48px; /* Space for fixed navbar */
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  color:white;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: inherit;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #04AA6D;
+}
+
+.sidebar .nav-link.active {
+  color: white;
+  background-color: #04AA6D;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color:inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 48px; /* Space for fixed navbar */
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: #04AA6D;
+  font-family: Apple Chancery, cursive;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+  
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(166, 206, 22, 0.1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+
+.coba:hover{
+  background-color:white;
+}
+
+p{
+  text-align: justify;
+  font-family:Apple Chancery, cursive;
+}
+
+li{
+  text-align: justify;
+  font-family:Apple Chancery, cursive;
+}
+
+#kontenkiri, #kontenkanan{
+  border: solid 2px;
+  height: 450px;
+  overflow-y: scroll;
+  padding-top: 10px;
+
+}
+
+#kotak {
+  background-color:  #04AA6D; 
+  color: white; padding: 10px;
+  
+  cursor: pointer;
+  font-family:Apple Chancery, cursive;
+}
+
+.isko{
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 10px;
+  border-style: solid;
+  border-color: #04AA6D;
+}
+
+.tombol{
+  background-color: #04AA6D;
+			color: white;
+			padding: 5px 5px;
+      margin-bottom: 40px;
+			border: none;
+			cursor: pointer;
+			width: 100px;
+			font-size:13px;
+			font-family: Apple Chancery, cursive;
+      
+}
+
+.button-pertanyaan {
+	cursor: pointer;
+}
+
+.button-pertanyaan:hover{
+  background-color: lawngreen;
+}
+#nilaitertinggi,#nilaiterendah{
+  margin-left: 20px;
+  width: 50px;
+}
+.header {
+  
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* height:500%; */
+}
+.table-sm td, .table-sm th {
+  padding: 0.6rem;
+  text-align: center;
+  font-family: Apple Chancery, cursive;
+  
+}
+.table td, .table th {
+  padding: 0.3rem;
+  vertical-align: middle;
+  border-top: 1px solid black;  
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-family: Apple Chancery, cursive;
+}
+.petunjuk{padding:20px;padding-top:0;overflow:hidden;border-radius:10px;border:2px solid #46b29e;border-style:groove}
+.petunjuk{float:none;margin-bottom:5px}
+
+div.spasi {
+    line-height: 2.3;
+  }
+
+.benar{color:green;font-size:1.1em}
+.salah{color:red;font-size:1.1em}
+
+.ket-benar{color:green;font-size:1em;font-weight:600;font-family:"Comic Sans MS"}
+.ket-salah{color:red;font-size:1em;font-weight:600;font-family:"Comic Sans MS"}
+
+.benar-b{color:green;font-weight:600}
+.salah-b{color:red;font-weight:600}
+ul.demo{margin:0;padding:-10px}.btn-petunjuk{margin-top:1rem;font-size:1.1em}.petunjuk{text-align:justify;font-size:1.1em}.kata-g1{font-size:.9em}.kata-g{color:#4169e1}.kata-gg{color:#4169e1;font-size:.9em}

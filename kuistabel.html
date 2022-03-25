@@ -1,0 +1,633 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>PETA - Penyajian Data</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="boostrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        p:hover{
+          text-decoration: none;
+        }
+
+        td, th {
+        border: 1px solid black;
+        text-align: center;
+        padding: 8px;
+        }
+
+        input[type=baru] {
+			width: 110px;
+			
+			border: 1px solid black;
+			box-sizing: box;
+        }
+    
+    </style>
+  <script>
+    window.onload= function awal(){
+      document.getElementById("2").hidden=true;
+      document.getElementById("3").hidden=true;
+      document.getElementById("4").hidden=true;
+      document.getElementById("5").hidden=true;
+    }
+  </script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a style="background-color: #04aa6d; color: white;font-family: Apple Chancery, cursive" class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">PETA</a>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <center>              
+            <br><br><br><br><br>
+            <h4 style="font-family: Apple Chancery, cursive">Navigasi Soal</h4>
+            <button id="nav1" style="font-family: Apple Chancery, cursive" onclick="satu()">1</button>
+            <button id="nav2" style="font-family: Apple Chancery, cursive" onclick="dua()">2</button>
+            <button id="nav3" style="font-family: Apple Chancery, cursive" onclick="tiga()">3</button>
+            <button id="nav4" style="font-family: Apple Chancery, cursive" onclick="empat()">4</button>
+            <button id="nav5" style="font-family: Apple Chancery, cursive" onclick="lima()">5</button>
+            </center>            
+          </div>          
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2" style="font-family: Apple Chancery, cursive">KUIS 2 : Menyajikan Data dalam Bentuk Tabel</h1>
+          
+          </div>
+          <div class="row">
+            <div id="kontenkiri"  class="col-sm">                    
+                    
+                    <div id="1">
+                    
+                    <p style="color: black">1.	Pada sebuah rumah terdapat beberapa perabotan berikut, yaitu kursi sebanyak 4, meja 2 , kulkas 1, tv 2 , mesin cuci 1. Buatlah penyajian data dalam bentuk tabel dari data tersebut ! </p>
+                    <p style="color: red;">Petunjuk Mengisi Tabel:</p>
+                    <ul>
+                      <li>Isi tabel sesuai dengan data yang diketahui pertama, dan seterusnya</li>
+                    </ul>
+                    <table>
+                        <tr style="font-family: Apple Chancery, cursive">
+                         <th ><center>Alat Perabotan Rumah</center></th>
+                         <th ><center>Jumlah</center></th>
+                        </tr>
+                        <tr>
+                         <th><center><input class="a" type="baru" id="tabel21" type="text"></center></th>
+                         <th><center><input class="a" type="baru" id="tabel22" type="text"></center></th>
+                        </tr>
+                        <tr>
+                         <td><center><input class="a" type="baru" id="tabel31" type="text"></center></td>
+                         <td><center><input class="a" type="baru" id="tabel32" type="text"></center></td>
+                        </tr>
+                        <tr>
+                         <td><center><input class="a" type="baru" id="tabel41" type="text"></center></td>
+                         <td><center><input class="a" type="baru" id="tabel42" type="text"></center></td>
+                        </tr>
+                        <tr>
+                         <td><center><input class="a" type="baru" id="tabel51" type="text"></center></td>
+                         <td><center><input class="a" type="baru" id="tabel52" type="text"></center></td>
+                        </tr>
+                        <tr>
+                          <td><center><input class="a" type="baru" id="tabel61" type="text"></center></td>
+                          <td><center><input class="a" type="baru" id="tabel62" type="text"></center></td>
+                        </tr>                        
+                    </table>
+                    <br>  
+                    <center style="margin-right: 50px;margin-left:20px;">
+                      <a href="#" onclick="dua()"><button class="tombol" >Selanjutnya</button></a>                      
+                    </center>
+                    </div>
+
+                    <div id="2">
+
+                    <p style="color: black" >2. Diketahui data pengunjung perpustakaan selama seminggu terakhir . Pada hari senin, pengunjung laki-laki berjumlah 12, dan perempuan berjumlah 17 pengunjung. Pada hari selasa, pengunjung laki-laki berjumlah 8, sedangkan perempuan ada 12 pengunjung. Pada hari rabu, pengunjung laki-laki berjumlah 6, sedangkan perempuan ada 13 pengunjung. Pada hari kamis, pengunjung laki-laki berjumlah 4, sedangkan perempuan ada 8 pengunjung. Pada hari jum’at, pengunjung laki-laki berjumlah 6, sedangkan perempuan ada 10 pengunjung . Buatlah Penyajian data dalam bentuk tabel dari data tersebut !</p>
+                    <p style="color: red;">Petunjuk Mengisi Tabel:</p>
+                    <ul>
+                      <li>Isi tabel sesuai dengan data yang diketahui pertama, dan seterusnya</li>
+                    </ul>
+                    <table style="color: black">
+                      <tr style="font-family: Apple Chancery, cursive">
+                       <th rowspan="2"><center>Hari</center></th>
+                       <th colspan="2"><center>Pengunjung Perpustakaan</center></th>
+                      </tr>
+                      <tr style="font-family: Apple Chancery, cursive">
+                       <th><center>Laki-laki</center></th>
+                       <th><center>Perempuan</center></th>
+                      </tr>
+                      <tr>
+                       <td><center><input class="a" type="baru" id="tabela1" type="text"></center></td>
+                       <td><center><input class="a" type="baru" id="tabela2" type="text"></center></td>
+                       <td><center><input class="a" type="baru" id="tabela3" type="text"></center></td>
+                      </tr>
+                      <tr>
+                       <td><center><input class="a" type="baru" id="tabelb1" type="text"></center></td>
+                       <td><center><input class="a" type="baru" id="tabelb2" type="text"></center></td>
+                       <td><center><input class="a" type="baru" id="tabelb3" type="text"></center></td>
+                      </tr>
+                      <tr>
+                       <td><center><input class="a" type="baru" id="tabelc1" type="text"></center></td>
+                       <td><center><input class="a" type="baru" id="tabelc2" type="text"></center></td>
+                       <td><center><input class="a" type="baru" id="tabelc3" type="text"></center></td>
+                      </tr>
+                      <tr>
+                        <td><center><input class="a" type="baru" id="tabeld1" type="text"></center></td>
+                        <td><center><input class="a" type="baru" id="tabeld2" type="text"></center></td>
+                        <td><center><input class="a" type="baru" id="tabeld3" type="text"></center></td>
+                       </tr>
+                       <tr>
+                        <td><center><input class="a" type="baru" id="tabele1" type="text"></center></td>
+                        <td><center><input class="a" type="baru" id="tabele2" type="text"></center></td>
+                        <td><center><input class="a" type="baru" id="tabele3" type="text"></center></td>
+                       </tr>
+                  </table>
+                  <br>
+                  <center style="margin-right: 50px;margin-left:20px;">
+                    <a href="#" onclick="satu()"><button class="tombol" >Sebelumnya</button></a>
+                    
+                    <a href="#" onclick="tiga()"><button class="tombol" >Selanjutnya</button></a>
+                  </center>
+                  <br>
+                  </div>
+
+                    <div id="3">
+                    
+                    <p style="color: black;">3.	Pada sebuah kelas terdapat beberapa perabotan berikut yaitu papan tulis 1, spidol 3, penggaris 1 , penghapus 1 , Jangka 2 , Buatlah penyajian data dalam bentuk tabel dari data tersebut !</p>
+                    <p style="color: red;">Petunjuk Mengisi Tabel:</p>
+                    <ul>
+                      <li>Isi tabel sesuai dengan data yang diketahui pertama, dan seterusnya</li>
+                    </ul>
+                    <table style="color:black">
+                      <tr style="font-family: Apple Chancery, cursive">
+                       <th><center>Alat Perabotan Sekolah</center></th>
+                       <th><center>Jumlah</center></th>
+                      </tr>
+                      <tr>
+                       <th><center><input class="a" type="baru" id="tabelf1" type="text"></center></th>
+                       <th><center><input class="a" type="baru" id="tabelf2" type="text"></center></th>
+                      </tr>
+                      <tr>
+                       <td><center><input class="a" type="baru" id="tabelg1" type="text"></center></td>
+                       <td><center><input class="a" type="baru" id="tabelg2" type="text"></center></td>
+                      </tr>
+                      <tr>
+                       <td><center><input class="a" type="baru" id="tabelh1" type="text"></center></td>
+                       <td><center><input class="a" type="baru" id="tabelh2" type="text"></center></td>
+                      </tr>
+                      <tr>
+                       <td><center><input class="a" type="baru" id="tabeli1" type="text"></center></td>
+                       <td><center><input class="a" type="baru" id="tabeli2" type="text"></center></td>
+                      </tr>
+                      <tr>
+                        <td><center><input class="a" type="baru" id="tabelj1" type="text"></center></td>
+                        <td><center><input class="a" type="baru" id="tabelj2" type="text"></center></td>
+                       </tr>
+                   </table>
+                   <br>
+                   <center style="margin-right: 50px;margin-left:20px;">
+                    <a href="#" onclick="dua()"><button class="tombol" >Sebelumnya</button></a>
+                    
+                    <a href="#" onclick="empat()"><button class="tombol" >Selanjutnya</button></a>                    
+                  </center>
+                  </div>
+
+                    <div id="4">
+                    
+                    <p style="color: black;">4.	Pada kelas 7A, diadakan pengukuran tinggi badan dan berat badan beberapa siswa yaitu Alpi tinggi 160cm dan berat 53kg, Andi tinggi 158cm dan berat 48kg, Kadir tinggi 178cm dan berat 64kg, Ali tinggi 177cm dan berat 59kg . Buatlah penyajian data dalam bentuk tabel dari data tersebut </p>
+                    <p style="color:red">Petunjuk Mengisi Tabel:</p>
+                    <ul>
+                      <li>Isi tabel sesuai dengan data yang diketahui pertama,dan seterusnya</li>
+                    </ul>
+                    <table style="color: black;">
+                      <tr style="font-family: Apple Chancery, cursive">
+                        <th><center>Nama Siswa</center></th>
+                        <th><center>Tinggi (cm) </center></th>
+                        <th><center>Berat (kg) </center></th>
+                      </tr>
+                      <tr>
+                        <th><center><input class="a" type="baru" id="tabelk1" type="text"></center></th>
+                        <th><center><input class="a" type="baru" id="tabelk2" type="text"></center></th>
+                        <th><center><input class="a" type="baru" id="tabelk3" type="text"></center></th>
+                      </tr>
+                      <tr>
+                        <td><center><input class="a" type="baru" id="tabell1" type="text"></center></td>
+                        <td><center><input class="a" type="baru" id="tabell2" type="text"></center></td>
+                        <th><center><input class="a" type="baru" id="tabell3" type="text"></center></th>
+                      </tr>
+                      <tr>
+                        <td><center><input class="a" type="baru" id="tabelm1" type="text"></center></td>
+                        <td><center><input class="a" type="baru" id="tabelm2" type="text"></center></td>
+                        <th><center><input class="a" type="baru" id="tabelm3" type="text"></center></th>
+                      </tr>
+                      <tr>
+                        <td><center><input class="a" type="baru" id="tabeln1" type="text"></center></td>
+                        <td><center><input class="a" type="baru" id="tabeln2" type="text"></center></td>
+                        <td><center><input class="a" type="baru" id="tabeln3" type="text"></center></td>                        
+                      </tr>
+                    </table>
+                    <br>
+                    <center style="margin-right: 50px;margin-left:20px;">
+                      <a href="#" onclick="tiga()"><button class="tombol" >Sebelumnya</button></a>
+                      
+                      <a href="#" onclick="lima()"><button class="tombol" >Selanjutnya</button></a>
+                    </center>
+                    </div>
+
+                    <div id="5">
+                      
+                    <p>5.	Diketahui data nilai ulangan harian matematika dari 10 siswa adalah sebagai berikut : 62, 72, 69, 65, 75, 71, 86, 82, 98, 93</p>
+                      <p>Maka buatlah penyajian data dalam bentuk tabel distribusi frekuensi dari data tersebut adalah …
+                      </p>
+                      <br> 
+                      <table>
+                        <tr style="font-family: Apple Chancery, cursive">
+                          <th><center>Nilai</center></th>
+                          <th><center>Banyak Siswa</center></th>
+                        </tr>
+                        <tr>
+                          <th> 
+                            <input style="width:50px" id="tabelp1" type="text"> 
+                            -
+                            <input style="width:50px" id="tabelp2" type="text">  
+                          </th>
+                          <th> <input style="width:50px"  id="tabelp3" type="text"></th>
+                        </tr>
+                        <tr>
+                          <th> 
+                            <input style="width:50px" id="tabelq1" type="text"> 
+                            -
+                            <input style="width:50px" id="tabelq2" type="text">  
+                          </th>
+                          <th> <input style="width:50px"  id="tabelq3" type="text"></th>
+                        </tr>
+                        <tr>
+                          <th> 
+                            <input style="width:50px" id="tabelr1" type="text"> 
+                            -
+                            <input style="width:50px" id="tabelr2" type="text">  
+                          </th>
+                          <th> <input style="width:50px"  id="tabelr3" type="text"></th>
+                        </tr>
+                        <tr>
+                          <th>
+                            <input style="width:50px" id="tabels1" type="text">
+                            -
+                            <input style="width:50px" id="tabels2" type="text">
+                          </th>
+                          <th><input style="width:50px" id="tabels3" type="text"></th>
+                        </tr>
+                      </table>                      
+                      <br>
+                      <center style="margin-right: 50px;margin-left:20px;font-family: Apple Chancery, cursive">
+                        <a href="#" onclick="empat()"><button class="tombol" >Sebelumnya</button></a>
+                        <a href="#" ><button class="tombol" id="btn5">Selesai</button></a>
+                      </center>
+                    </div>
+            </div>
+
+          </div>
+          </div>
+                    
+        </main>
+        
+      </div>
+      
+    </div>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      function tampil(){
+        document.getElementById("menampilkan2").style.display="block";
+      }
+    </script>
+    <script>
+    //  a=document.getElementById("tabel11").value;
+    //  b=document.getElementById("tabel12").value;
+    //  c=document.getElementById("tabel13").value;
+    //  d=document.getElementById("tabel14").value;
+    //  e=document.getElementById("tabel15").value;
+    //  f=document.getElementById("tabel16").value;
+    //  g=document.getElementById("tabel17").value;
+    //  h=document.getElementById("tabel18").value;
+    //  i=document.getElementById("tabel19").value;
+    //  j=document.getElementById("tabel191").value; 
+    </script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
+
+    <script>
+      const firebaseConfig = {
+    apiKey: "AIzaSyCgOanUppXnq7QUWNmXSXRQQ8sc4a-qy3A",
+    authDomain: "penyajiandata.firebaseapp.com",
+    databaseURL: "https://penyajiandata-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "penyajiandata",
+    storageBucket: "penyajiandata.appspot.com",
+    messagingSenderId: "466304504544",
+    appId: "1:466304504544:web:77e5cbb396a1b86ea37685"
+  };
+  
+  var d = new Date();
+  var t = d.getTime();
+  var counter = t;
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+function createTask(sekolah, nama, kelas, nilai) {
+    counter += 1;
+    var task = {
+        id: counter,
+        sekolah: sekolah,
+        nama: nama,
+        kelas: kelas,
+        nilai: nilai,
+        
+    }
+
+    let db = firebase.database().ref("kuistabel/" + counter);
+    db.set(task);
+
+}
+
+      function satu(){
+        document.getElementById("1").hidden=false;
+        document.getElementById("2").hidden=true;
+        document.getElementById("3").hidden=true;
+        document.getElementById("4").hidden=true;
+        document.getElementById("5").hidden=true; 
+      }
+      function dua(){
+        document.getElementById("1").hidden=true;
+        document.getElementById("2").hidden=false;
+        document.getElementById("3").hidden=true;
+        document.getElementById("4").hidden=true;
+        document.getElementById("5").hidden=true;
+        
+        document.getElementById("nav1").style.backgroundColor="blue";
+        document.getElementById("nav1").style.color="white";        
+      }
+      function tiga(){
+        document.getElementById("1").hidden=true;
+        document.getElementById("2").hidden=true;
+        document.getElementById("3").hidden=false;
+        document.getElementById("4").hidden=true;
+        document.getElementById("5").hidden=true;
+
+        document.getElementById("nav2").style.backgroundColor="blue";
+        document.getElementById("nav2").style.color="white";
+      }
+      function empat(){
+        document.getElementById("1").hidden=true;
+        document.getElementById("2").hidden=true;
+        document.getElementById("3").hidden=true;
+        document.getElementById("4").hidden=false;
+        document.getElementById("5").hidden=true;
+
+        document.getElementById("nav3").style.backgroundColor="blue";
+        document.getElementById("nav3").style.color="white";
+      }
+      function lima(){
+        document.getElementById("1").hidden=true;
+        document.getElementById("2").hidden=true;
+        document.getElementById("3").hidden=true;
+        document.getElementById("4").hidden=true;
+        document.getElementById("5").hidden=false;
+
+        document.getElementById("nav4").style.backgroundColor="blue";
+        document.getElementById("nav4").style.color="white";
+      }
+      
+      var nilai=0;
+      
+      // btn5
+      let btn5=document.getElementById("btn5")
+      btn5.addEventListener("click",function(){
+        //jawabansoal1
+        //10isijawaban
+        if(document.getElementById("tabel21").value.toLowerCase()  =="kursi"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabel22").value =="4"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabel31").value.toLowerCase()=="meja"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabel32").value =="2"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabel41").value.toLowerCase()=="kulkas"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabel42").value =="1"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabel51").value.toLowerCase() =="tv"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabel52").value =="2"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabel61").value.toLowerCase()=="mesin cuci"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabel62").value =="1"){
+          nilai=nilai+2;
+        }
+        //jawabansoal2
+        //15isijawaban
+        if(document.getElementById("tabela1").value.toLowerCase()  =="senin"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabela2").value =="12"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabela3").value =="17"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabelb1").value.toLowerCase()=="selasa"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabelb2").value =="8"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabelb3").value =="12"){
+          nilai=nilai+1.3;        }
+        if(document.getElementById("tabelc1").value.toLowerCase()=="rabu"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabelc2").value =="6"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabelc3").value =="13"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabeld1").value.toLowerCase()=="kamis"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabeld2").value =="4"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabeld3").value =="8"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabele1").value.toLowerCase()=="jum'at"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabele2").value =="6"){
+          nilai=nilai+1.3;
+        }
+        if(document.getElementById("tabele3").value =="10"){
+          nilai=nilai+1.3;
+        }
+        //jawabansoal3
+        //10isijawaban
+        if(document.getElementById("tabelf1").value.toLowerCase()  =="papan tulis"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabelf2").value =="1"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabelg1").value.toLowerCase()=="spidol"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabelg2").value =="3"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabelh1").value.toLowerCase()=="penggaris"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabelh2").value =="1"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabeli1").value.toLowerCase()=="penghapus"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabeli2").value =="1"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabelj1").value.toLowerCase()=="jangka"){
+          nilai=nilai+2;
+        }
+        if(document.getElementById("tabelj2").value =="2"){
+          nilai=nilai+2;
+        }
+        //jawabansoal4
+        //12isijawaban
+        if(document.getElementById("tabelk1").value.toLowerCase()  =="alpi"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelk2").value =="160"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelk3").value =="53"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabell1").value.toLowerCase()=="andi"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabell2").value =="158"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabell3").value =="48"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelm1").value.toLowerCase()=="kadir"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelm2").value =="178"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelm3").value =="64"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabeln1").value.toLowerCase()=="ali"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabeln2").value =="177"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabeln3").value =="59"){
+          nilai=nilai+1.6;
+        }
+        //jawabansoal5
+        //12isijawaban
+        if(document.getElementById("tabelp1").value =="61"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelp2").value =="70"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelp3").value =="3"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelq1").value =="71"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelq2").value =="80"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelq3").value =="3"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelr1").value =="81"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelr2").value =="90"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabelr3").value =="2"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabels1").value =="91"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabels2").value =="100"){
+          nilai=nilai+1.6;
+        }
+        if(document.getElementById("tabels3").value =="2"){
+          nilai=nilai+1.6;
+        }
+        
+        // alert(nilai)    
+        createTask("smp1", "nama","kelas", nilai)    
+        // window.location="diagrambatang.html"
+      })
+    </script>
+    
+  </body>
+  <footer>
+    <!-- <br><br>
+    <center style="margin-right: 50px;margin-left:20px;">
+    <a href="#"><button class="tombol">Selesai</button></a>
+    </center> -->
+  </footer>
+</html>

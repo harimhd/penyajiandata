@@ -1,0 +1,681 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>PETA - Penyajian Data</title>
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="boostrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="haldep.html">PETA</a>      
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item ">
+                <a data-toggle="collapse" class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  <a class="nav-link dropdown-toggle" href="#">
+                    <span data-feather="bar-chart-2"></span>
+                  Data
+                  </a>
+                  <ul style="list-style: none;">
+                    <a href="data.html" style="color: black;"> <li class="">Mengenal Data</li></a>
+                    <a href="kuis_1/latihan.html" style="color: black;"> <li class="">Kuis</li></a>
+                  </ul>
+                </a>
+             </li>
+              <li class="nav-item ">
+                <a class="nav-link dropdown-toggle " href="#">
+                  <span data-feather="columns"></span>
+                  Tabel
+                </a>
+                <ul style="list-style: none;">
+                  <a href="tabelbariskolom.html" style="color: black;"> <li class="">Baris Kolom</li></a>
+                  <a href="tabelkontingensi.html" style="color: black;"> <li class="">Kontingensi</li></a>
+                  <a href="tabelfrekuensi.html" style="color: black;"> <li class="">Distribusi Frekuensi</li></a>
+                  <a href ="kuistabel.html" style="color:black"><li class="">Kuis</li></a>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle active" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Diagram
+                </a>
+                <ul style="list-style: none;">
+                 <a href ="diagrambatang.html" style="color:black"> <li class="">Diagram Batang</li></a>
+                 <a href ="diagramgaris.html" style="color:black"> <li class="">Diagram Garis</li></a>
+                 <a href ="diagramlingkaran.html" style="color:black"> <li class="nav-link coba active">Diagram Lingkaran</li></a>
+                 <a href ="kuis_diagram/latihan_diagram.html" style="color:black"><li class="">Kuis</li></a>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a data-toggle="collapse" class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  Evaluasi<span class="sr-only"></span>
+                </a>
+                <ul style="list-style: none;">
+                  <a href ="kuis_evaluasi/latihan_evaluasi.html" style="color:black"><li class="">Evaluasi</li></a>
+                </ul>
+             </li>              
+            </ul>            
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Menyajikan Data dalam Bentuk Diagram</h1>
+          
+          </div>
+          <div class="row">
+            <div id="kontenkiri"  class="col-sm">
+              <p style="background-color: #04aa6d;color: whitesmoke;text-align: center;font-size: 30px;">
+                DIAGRAM LINGKARAN
+              </p>
+              <div id="kotak" style="padding-left:20px;">Tujuan Pembelajaran</div>
+                <div class="isko" >
+                    <ul><li>Siswa dapat menyajikan data dalam bentuk diagram lingkaran</li></ul>
+                </div>
+                <p style="text-indent: 30px;">Diagram lingkaran adalah penyajian data dengan <b>menggunakan gambar yang berbentuk lingkaran</b>. <b>Bagian-bagian dari daerah lingkaran menunjukkan bagian-bagian atau persentase dari nilai keseluruhan.</b> Untuk membuat diagram lingkaran, Tentukan terlebih dahulu besar persentase tiap nilai terhadap keseluruhan data dari besarnya sudut pusat lingkaran.</p> 
+                <p style="text-indent: 30px;">Penyajian data dalam diagram lingkaran terbagi atas juring yang dinyatakan dalam bentuk <b>persen (%) </b>atau dapat pula dinyatakan dalam bentuk <b>besar sudut ° </b>. Besarnya persentase atau besarnya sudut dapat ditentukan dari besarnya nilai data atau frekuensi suatu data. Jika juring dinyatakan dalam persen maka untuk satu lingkaran penuh adalah 100% dan jika setiap juring dinyataka dalam derajat maka besarnya sudut dalam satu lingkaran penuh adalah 360 derajat. 
+                </p> 
+                <p style="color:whitesmoke;background-color: #04aa6d;text-align: center;font-size: 20px;">
+                  CONTOH
+                </p> 
+                <p>
+                  Perhatikan tabel dibawah !
+                </p>             
+                <div class="table-responsive">                    
+                    <center>                        
+                    <div class="table-responsive">
+                      <figure>
+                        <table style="border-right: 1px solid black;border-left: 1px solid black;border-top: 1px solid black;border-bottom: 1px solid black;font-family: Apple Chancery, cursive;">
+                            <thead style="background-color: #04aa6d;color: whitesmoke;">
+                                <th style="border-right: 1px solid black;">No</th>
+                                <th style="border-left: 1px solid black;">Jenis Pekerjaan</th>
+                                <th style="border-left: 1px solid black;">Banyak</th>
+                            </thead>
+                            <tbody style="font-family: Apple Chancery, cursive;">
+                                <tr style="text-align: center;border-bottom: 1px solid black;border-top: 1px solid black;">
+                                    <td>1</td>
+                                    <td style="border-left: 1px solid black;">Pebisnis</td>
+                                    <td style="border-left: 1px solid black;">2</td>
+                                </tr>
+                                <tr style="text-align: center;border-bottom: 1px solid black;">
+                                    <td>2</td>
+                                    <td style="border-left:1px solid black;">Polisi</td>
+                                    <td style="border-left:1px solid black ;">4</td>
+                                </tr>
+                                <tr style="text-align: center;border-bottom: 1px solid black;">
+                                    <td>3</td>
+                                    <td style="border-left:1px solid black;">Dokter</td>
+                                    <td style="border-left: 1px solid black;">3</td>
+                                </tr>
+                                <tr style="text-align: center;border-bottom: 1px solid black;">
+                                    <td>4</td>
+                                    <td style="border-left: 1px solid black;">Petani</td>
+                                    <td style="border-left: 1px solid black;">6</td>
+                                </tr>
+                                <tr style="text-align: center;border-bottom: 1px solid black;">
+                                    <td>5</td>
+                                    <td style="border-left: 1px solid black;">Guru</td>
+                                    <td style="border-left: 1px solid black;">4</td>
+                                </tr>
+                                <tr style="text-align: center;border-bottom: 1px solid black;">
+                                    <td>6</td>
+                                    <td style="border-left: 1px solid black;">Nelayan</td>
+                                    <td style="border-left: 1px solid black;">2</td>
+                                </tr>
+                                <tr style="text-align: center;border-bottom: 1px solid black;">
+                                    <td>7</td>
+                                    <td style="border-left: 1px solid black;">Dosen</td>
+                                    <td style="border-left: 1px solid black;">3</td>
+                                </tr>                                
+                            </tbody>                            
+                        </table>
+                        <figcaption style="font-family:Apple Chancery, cursive ;">Tabel 6. Jenis pekerjaan
+                        </figcaption>
+                      </figure>
+                    </div>  
+                    
+                    <p><b>Penyelesaian:</b></p>
+                    <p>Untuk menyajikan data tersebut menjadi diagram lingkaran, kalian bisa menghitung persentase pekerjaan tersebut terlebih dahulu seperti cara dibawah.</p>
+                    <div class="table-responsive">
+                      <figure>
+                      <table style="border-left: 1px solid black;border-top: 1px solid black;border-bottom: 1px solid black; border-right: 1px solid black;">
+                          <thead style="background-color: #04aa6d;color: whitesmoke;text-align: center;font-family: Apple Chancery, cursive;">
+                              <th> Jenis Pekerjaan</th>
+                              <th style="border-left: 1px solid black;">Frekuensi</th>
+                              <th style="border-left: 1px solid black;">Persentase</th>
+                          </thead>
+                          <tbody style="font-family: Apple Chancery, cursive;;">
+                              <tr style="text-align: center;border-top: 1px solid black;border-bottom: 1px solid black;">
+                                  <td>Pebisnis</td>
+                                  <td style="border-left: 1px solid black;">2</td>
+                                  <td style="border-left: 1px solid black;">\[ \frac{2}{24} \times 100 \% = {8.33}\% \]</td>
+                              </tr>
+                              <tr style="text-align: center;border-bottom: 1px solid black;">
+                                  <td>Polisi</td>
+                                  <td style="border-left: 1px solid black;">4</td>
+                                  <td style="border-left: 1px solid black;">\[ \frac{2}{24} \times 100 \% = {16.67}\% \]</td>
+                              </tr>
+                              <tr style="text-align: center;border-bottom: 1px black;">
+                                  <td>Dokter</td>
+                                  <td style="border-left: 1px solid black;">3</td>
+                                  <td style="border-left: 1px solid black;">\[ \frac{3}{24} \times 100 \% = {12.50}\% \]</td>
+                              </tr>
+                              <tr style="text-align: center;border-bottom: 1px solid black;border-top: 1px solid black;">
+                                  <td>Petani</td>
+                                  <td style="border-left: 1px solid black;">2</td>
+                                  <td style="border-left: 1px solid black;">\[ \frac{2}{24} \times 100 \% = {8.33}\% \]</td>
+                              </tr>
+                              <tr style="text-align: center;border-bottom: 1px solid black;">
+                                  <td>Guru</td>
+                                  <td style="border-left: 1px solid black;">6</td>
+                                  <td style="border-left: 1px solid black;">\[ \frac{6}{24} \times 100 \% = {25.00}\% \]</td>
+                              </tr>
+                              <tr style="text-align: center;border-bottom: 1px solid black;"> 
+                                  <td>Nelayan</td>
+                                  <td style="border-left: 1px solid black;">4</td>
+                                  <td style="border-left: 1px solid black;">\[ \frac{4}{24} \times 100 \% = {16.67}\% \]</td>
+                              </tr>
+                              <tr style="text-align: center;border-bottom: 1px solid black;">
+                                  <td>Dosen</td>
+                                  <td style="border-left: 1px solid black;">3</td>
+                                  <td style="border-left: 1px solid black;">\[ \frac{3}{24} \times 100 \% = {12.50}\% \]</td>
+                              </tr>
+                              <tr style="text-align: center;background-color: #04aa6d;color: whitesmoke;font-family: Apple Chancery, cursive;">
+                                <td>Total</td>
+                                <td style="border-left: 1px solid black">24</td>
+                                <td style="border-left: 1px solid black">100%</td>
+                            </tr>                                
+                          </tbody>
+                      </table>
+                      <figcaption style="font-family: Apple Chancery, cursive;">Tabel 7. Persentase Pekerjaan dalam persen</figcaption>
+                    </figure>                      
+                  </div>  
+                  </center>
+                </div>
+                <p style="text-indent: 30px;">Dari tabel persentase diatas maka penyajian data bentuk diagram lingkaran seperti <a href ="#Gambar5" onclick="tampil1()">Gambar</a> disamping</p>              
+                <p style="text-indent: 30px;">
+                  Karena lingkaran berbentuk sudut, maka harus di ubahkan ke dalam bentuk sudut atau derajat. Karena itu, untuk menyajikan data dalam bentuk diagram lingkaran, kalian harus menentukan ukuran sudut pusat daerah masing-masing frekuensi. Seperti yang kita tahu, satu lingkaran sudut pusatnya adalah 360°.
+                </p>
+                <center>
+                <figure>
+                <table style="border-left: 1px solid black;border-top: 1px solid black;border-bottom: 1px solid black; border-right: 1px solid black;">
+                  <thead style="background-color: #04aa6d;color: whitesmoke;text-align: center;font-family: Apple Chancery, cursive;">
+                      <th>Jenis Pekerjaan</th>
+                      <th style="border-left: 1px solid black;">Frekuensi</th>
+                      <th style="border-left: 1px solid black;">Persentase</th>
+                  </thead>
+                  <tbody style="font-family: Apple Chancery, cursive;">
+                      <tr style="text-align: center;border-bottom: 1px solid black;border-top: 1px solid black;">
+                          <td>Pebisnis</td>
+                          <td style="border-left: 1px solid black;">2</td>
+                          <td style="border-left: 1px solid black;">\[ \frac{2}{24} \times 360^{\circ}= 30^{\circ} \]</td>
+                      </tr>
+                      <tr style="text-align: center;border-bottom: 1px solid black;border-top: 1px black;">
+                          <td>Polisi</td>
+                          <td style="border-left: 1px solid black;">4</td>
+                          <td style="border-left: 1px solid black;">\[ \frac{4}{24} \times 360^{\circ}= 60^{\circ} \]</td>
+                      </tr>
+                      <tr style="text-align: center;border-bottom: 1px solid black;border-top: 1px black;">
+                          <td>Dokter</td>
+                          <td style="border-left: 1px solid black;">3</td>
+                          <td style="border-left: 1px solid black;">\[ \frac{3}{24} \times 360^{\circ}= 45^{\circ} \]</td>
+                      </tr>
+                      <tr style="text-align: center;border-bottom: 1px solid black;border-top: 1px black;">
+                          <td>Petani</td>
+                          <td style="border-left: 1px solid black;">2</td>
+                          <td style="border-left: 1px solid black;">\[ \frac{2}{24} \times 360^{\circ}= 30^{\circ} \]</td>
+                      </tr>
+                      <tr style="text-align: center;border-bottom: 1px solid black;border-top: 1px black;">
+                          <td>Guru</td>
+                          <td style="border-left: 1px solid black;">6</td>
+                          <td style="border-left: 1px solid black;">\[ \frac{6}{24} \times 360^{\circ}= 90^{\circ} \]</td>
+                      </tr>
+                      <tr style="text-align: center;border-bottom: 1px solid black;border-top: 1px black;"> 
+                          <td>Nelayan</td>
+                          <td style="border-left: 1px solid black;">4</td>
+                          <td style="border-left: 1px solid black;">\[\frac{4}{24} \times 360^{\circ}= 60^{\circ} \]</td>
+                      </tr>
+                      <tr style="text-align: center;border-left: 1px solid black;border-bottom: 1px solid black;">
+                          <td>Dosen</td>
+                          <td style="border-left: 1px solid black;">3</td>
+                          <td style="border-left: 1px solid black;">\[\frac{3}{24} \times 360^{\circ}= 45^{\circ} \]</td>
+                      </tr>
+                      <tr style="text-align: center;background-color: #04aa6d;color: whitesmoke;font-family: Apple Chancery, cursive;">
+                        <td>Total</td>
+                        <td style="border-left: 1px solid black">24</td>
+                        <td style="border-left: 1px solid black">360°</td>
+                    </tr>                                
+                  </tbody>
+              </table>
+              <figcaption style="font-family: Apple Chancery, cursive;">Tabel 8. Persentase Pekerjaan dalam persen</figcaption>
+            </figure>
+            </center>            
+            <p style="text-indent: 30px;">
+              Dari tabel persentase diatas, maka penyajian data dalam bentuk diagram lingkaran adalah seperti <a href ="#Gambar4" onclick="tampil2()">Gambar</a> disamping.
+            </p>                        
+            <center>
+              <p style="background-color: #04aa6d;color: whitesmoke;text-align: center;font-size: 20px;">AYO MENALAR</p>
+            </center>
+            <p>
+              1.	Diketahui hasil pengumpulan data tentang ukuran sepatu siswa diperoleh data sebagai berikut
+            </p>
+            <center>
+              <figure>
+              <table style="border-left: 1px solid black;border-top: 1px solid black;border-bottom: 1px solid black; border-right: 1px solid black;">
+                <thead style="background-color: #04aa6d;color: whitesmoke;font-family: Apple Chancery, cursive;">
+                    <th>No</th>
+                    <th style="border-left: 1px solid black">Ukuran Sepatu</th>
+                    <th style="border-left: 1px solid black">Frekuensi</th>
+                </thead>
+                <tbody>
+                    <tr style="text-align: center;border-top: 1px solid black;">
+                        <td>1</td>
+                        <td style="border-left: 1px solid black">34</td>
+                        <td style="border-left: 1px solid black">2</td>
+                    </tr>
+                    <tr style="text-align: center;border-top: 1px solid black;">
+                        <td>2</td>
+                        <td style="border-left: 1px solid black">35</td>
+                        <td style="border-left: 1px solid black">8</td>
+                    </tr>
+                    <tr style="text-align: center;border-top: 1px solid black;">
+                        <td>3</td>
+                        <td style="border-left: 1px solid black">36</td>
+                        <td style="border-left: 1px solid black">6</td>
+                    </tr>
+                    <tr style="text-align: center;border-top: 1px solid black;">
+                        <td>4</td>
+                        <td style="border-left: 1px solid black">37</td>
+                        <td style="border-left: 1px solid black">4</td>
+                    </tr>
+                    <tr style="text-align: center;border-top: 1px solid black;border-bottom: 1px solid black;">
+                        <td>5</td>
+                        <td style="border-left: 1px solid black">38</td>
+                        <td style="border-left: 1px solid black">2</td>
+                    </tr>
+                    <tr style="text-align: center;background-color: #04aa6d;color: whitesmoke;font-family: Apple Chancery, cursive;">
+                      <td colspan="2"><center>Total</center></td>
+                      <td style="border-left: 1px solid black">22</td>
+                  </tr>                               
+                </tbody>
+            </table>
+            <figcaption style="font-family:Apple Chancery, cursive;">Tabel 9. Ukuran sepatu</figcaption>
+          </figure>            
+            </center>
+            <p>Buatlah diagram lingkaran dari data tersebut !</p>
+            <p>Untuk mengerjakan soal diatas silahkan klik <a style="color: green;" href ="#Tabel4" onclick="tampil3()">KERJAKAN</a>                    
+            </p> 
+            </div>
+            <div id="kontenkanan" class="col-sm">                            
+              <div id="menampilkan8" style="display: none;">
+              <center>
+                <img src="./lingkarpersen1.png" width="70%" alt="">
+              </center>
+              <center><b style="font-style: italic;">Gambar 3. Diagram lingkaran dalam bentuk persen </b></center>
+              </div> 
+              <br>
+              <br>
+              <div id="menampilkan7" style="display: none;">
+                <center>
+                  <img src="./lingkarderajat.PNG" width="70%" alt="">
+                  <br>
+                  <b>Gambar 4. Diagram lingkaran dalam bentuk derajat</b>
+                </center>
+                <br>
+              </div>
+              <div id="menampilkan9" style="display: none;">
+                <div style="border-color: solid black;border-style: groove;">
+                  <ol>
+                    <p>Petunjuk:</p>
+                    <li>Isi semua kolom dibawah dengan jawaban yang dianggap benar sesuai pertanyaan disebelah kiri </li>
+                    <li>Kemudian klik periksa jawaban</li>
+                    <li>Jika kolom berwarna <a style="color:green">hijau</a>, maka jawaban <b>benar</b></li>
+                    <li>Jika kolom berwarna <a style="color:red">merah</a>, maka jawaban <b>salah</b></li>
+                    <li>Klik ulang, jika ingin mengulang menjawab </li>
+                  </ol>
+                </div>
+                <br>
+                <p><b>Penyelesaian :</b></p>
+            <p style="text-indent: 30px;">Untuk menyajikan data tersebut menjadi diagram lingkaran, kalian bisa menentukan ukuran sepatu kemudian menentukan jumlah frekuensinya, setelah itu menghitung persentase setiap ukuran sepatu menggunakan rumus : \[ \frac{f}{ftotal} \times 100 \%\]
+            Catatan:
+              <br>
+            f=frekuensi
+            </p>
+              <center>
+              <figure>
+              <table class="table table-striped table-sm">
+                <thead style="background-color: #04aa6d;color: whitesmoke; text-align: center;font-family: Apple Chancery, cursive">
+                    <th scope="col" style="border-left:1px solid black ;border-bottom: 1px solid black;">No</th>
+                    <th scope="col" style="border-left:1px solid black;border-bottom: 1px solid black;">Ukuran Sepatu</th>
+                    <th scope="col" style="border-left:1px solid black;border-bottom: 1px solid black;">Frekuensi</th>
+                    <th colspan="2" style="border-left: 1px solid black;border-right: 1px solid black;border-bottom: 1px solid black;">Persentase</th>
+                </thead>
+                <tbody>
+                    <tr style="text-align: center;border-right: 1px solid black;border-left: 1px solid black; ">
+                        <td style="width: 5px;">1</td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabela1" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabela2" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:80px" id="tabela3" type="text">
+                          <hr>
+                          <input style="width:80px" id="tabela4" type="text">
+                        </td>
+                          <td>
+                            x 100 % =
+                            <input style="width:80px" id="tabela5" type="text">
+                          </td>                        
+                    </tr>
+                    <tr style="text-align: center;border-left: 1px solid black;border-right: 1px solid black;">
+                        <td>2</td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabelb1" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabelb2" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:80px" id="tabelb3" type="text">
+                          <hr>
+                          <input style="width:80px" id="tabelb4" type="text">
+                        </td>
+                        <td>
+                          x 100 % =
+                          <input style="width:80px" id="tabelb5" type="text">
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;border-left: 1px solid black;border-right: 1px solid black;">
+                        <td>3</td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabelc1" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabelc2" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:80px" id="tabelc3" type="text">
+                          <hr>
+                          <input style="width:80px" id="tabelc4" type="text">
+                        </td>
+                        <td>
+                          x 100 % =
+                          <input style="width:80px" id="tabelc5" type="text">
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;border-left:1px solid black;border-right: 1px solid black;">
+                        <td>4</td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabeld1" type="text">
+                        </td>
+                        <td style="border-left:1px solid black ;">
+                          <input style="width:50px" id="tabeld2" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:80px" id="tabeld3" type="text">
+                          <hr>
+                          <input style="width:80px" id="tabeld4" type="text">
+                        </td>
+                        <td>
+                          x 100 % =
+                          <input style="width:80px" id="tabeld5" type="text">
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;border-left:1px solid black ;border-right: 1px solid black;">
+                        <td>5</td>
+                        <td style="border-left:1px solid black ;">
+                          <input style="width:50px" id="tabele1" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabele2" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:80px" id="tabele3" type="text">
+                          <hr>
+                          <input style="width:80px" id="tabele4" type="text">
+                        </td>
+                        <td>
+                          x 100 % =
+                          <input style="width:80px" id="tabele5" type="text">
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;background-color: #04aa6d;color: whitesmoke;border-right: 1px solid black;font-family: Apple Chancery, cursive">
+                      <td colspan="2" style="border-left: 1px solid black;"><center>Total</center></td>
+                      <td style="border-left: 1px solid black;">
+                        <input style="width:50px" id="tabelf1" type="text">
+                      </td>
+                      <td colspan="2" style="border-left: 1px solid black;">
+                        <input style="width:80px" id="tabelf2" type="text">
+                      </td>
+                  </tr>                               
+                </tbody>
+            </table>
+            <figcaption style="font-family: Apple Chancery, cursive">Tabel 10. Persentase Ukuran sepatu dalam persen
+            </figcaption>
+          </figure>
+            <center>
+              <button class style="background-color: #04aa6d;color: whitesmoke;font-family: Apple Chancery, cursive;"button-pertanyaan" onclick="cek3()">Cek Jawaban</button>
+              <!-- <p id="tampil"></p> -->
+
+              <button class style="background-color: #04aa6d;color: whitesmoke;font-family: Apple Chancery, cursive;"button-pertanyaan" onclick="Ulang3()">Ulang</button>
+              <br><br>
+            </center>           
+            </center>
+            <p style="text-indent: 30px;">
+              Luas daerah pada suatu lingkaran sesuai dengan sudut pusat daerah pada lingkaran. Oleh karena itu, untuk menyajikan data dalam bentuk diagram lingkaran, harus menentukan ukuran sudut pusat daerah masing masing frekuensi dengan rumus: \[\frac{f}{ftotal} \times 360^{\circ} \]
+              Catatan:
+              <br>
+              f=frekuensi
+            </p>
+            <center>
+              <b style="font-style: italic;"></b>
+            </center>
+            <figure>
+            <center>
+              <figure>
+              <table class="table table-striped table-sm">
+                <thead style="background-color: #04aa6d;color: whitesmoke; text-align: center;border-right: 1px solid black;font-family: Apple Chancery, cursive">
+                    <th scope="col" style="border-left: 1px solid black;border-bottom: 1px solid black;">No</th>
+                    <th scope="col" style="border-left: 1px solid black;border-bottom: 1px solid black;">Ukuran Sepatu</th>
+                    <th scope="col" style="border-left: 1px solid black;border-bottom: 1px solid black;">Frekuensi</th>
+                    <th colspan="2" style="border-left: 1px solid black;border-bottom: 1px solid black;">Persentase</th>
+                </thead>
+                <tbody style="border-left: 1px solid black;border-right: 1px solid black;font-family: Apple Chancery, cursive;">
+                    <tr style="text-align: center;">
+                        <td>1</td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabelg1" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabelg2" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:80px" id="tabelg3" type="text">
+                          <hr>
+                          <input style="width:80px" id="tabelg4" type="text">
+                        </td>
+                        <td>
+                          x 360° = 
+                          <input style="width:80px" id="tabelg5" type="text">
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>2</td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabelh1" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabelh2" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:80px" id="tabelh3" type="text">
+                          <hr>
+                          <input style="width:80px" id="tabelh4" type="text">
+                        </td>
+                        <td>
+                          x 360°=
+                          <input style="width:80px" id="tabelh5" type="text">
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>3</td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabeli1" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabeli2" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:80px" id="tabeli3" type="text">
+                          <hr>
+                          <input style="width:80px" id="tabeli4" type="text">
+                        </td>
+                        <td>
+                          x 360° =
+                          <input style="width:80px" id="tabeli5" type="text">
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>4</td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabelj1" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabelj2" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:80px" id="tabelj3" type="text">
+                          <hr>
+                          <input style="width:80px" id="tabelj4" type="text">
+                        </td>
+                        <td>
+                          x 360° =
+                          <input style="width:80px" id="tabelj5" type="text">
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <td>5</td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabelk1" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:50px" id="tabelk2" type="text">
+                        </td>
+                        <td style="border-left: 1px solid black;">
+                          <input style="width:80px" id="tabelk3" type="text">
+                          <hr>
+                          <input style="width:80px" id="tabelk4" type="text">
+                        </td>
+                        <td>
+                          x 360° =
+                          <input style="width:80px" id="tabelk5" type="text">
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;background-color: #04aa6d;color: whitesmoke;font-family: Apple Chancery, cursive;">
+                      <td colspan="2"><center>Total</center></td>
+                      <td style="border-left: 1px solid black;">
+                        <input style="width:50px" id="tabell1" type="text">
+                      </td style="border-left: 1px solid black;">
+                      <td colspan="2" style="border-left: 1px solid black;">
+                        <input style="width:80px" id="tabell2" type="text">
+                      </td>
+                  </tr>                               
+                </tbody>
+            </table>
+            <figcaption style="font-family: Apple Chancery, cursive;">Tabel 11. Persentase Ukuran sepatu dalam derajat</figcaption>
+          </figure>
+            <center>
+              <button class style="background-color: #04aa6d;color: whitesmoke;font-family: Apple Chancery, cursive;"button-pertanyaan" onclick="cek4()">Periksa Jawaban</button>
+              <!-- <p id="tampil"></p> -->
+
+              <button class style="background-color: #04aa6d;color: whitesmoke;font-family: Apple Chancery, cursive;"button-pertanyaan" onclick="Ulang4()">Ulang</button>
+              <br><br>
+            </center>            
+            </center>
+              </div>
+              <br>
+            </div>                        
+       </main>
+      </div>
+    </div>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+    <script src="pertanyaan4.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      function tampil(){
+        document.getElementById("menampilkan6").style.display="block";
+      }
+    </script>
+    <script>
+      function tampil2(){
+        document.getElementById("menampilkan7").style.display="block";
+      }
+    </script>
+    <script>
+      function tampil1(){
+        document.getElementById("menampilkan8").style.display="block";
+      }
+    </script>
+    <script>
+      function tampil3(){
+        document.getElementById("menampilkan9").style.display="block";
+      }
+    </script>
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+    </script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+
+    <script>
+      feather.replace()
+    </script>
+
+  </body>
+  <footer>
+    <br>
+    <center style="margin-right: 50px;margin-left:20px;">
+    <a href="diagramgaris.html"><button class="tombol">Sebelumnya</button></a>
+  
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="loginkuis.html"><button class="tombol" style="float: right;margin-right:200px;">Selanjutnya</button></a>
+    </center>
+  </footer>
+</html>

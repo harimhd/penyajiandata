@@ -1,0 +1,132 @@
+body{
+	background-image:url('latar.png');
+	margin:0px;
+		
+}
+.header{
+	width:100%;
+	height:200px;
+	background-color:#04aa6d;
+	
+}
+.judul{
+	font-size:35px;
+	font-family:MV Boli;
+	color:white;
+	
+}
+.kikd{
+	width:33%;
+	height:400px;
+	
+	float:left;
+}
+.materi{
+	width:33%;
+	height:400px;
+	
+	float:left; 
+}
+.petunjuk{
+	width:33%;
+	height:400px;
+	
+	float:left; 
+}
+.img1{
+	transition:0.5s;
+}
+.img2{
+	transition:0.5s;
+}
+.img3{
+	transition:0.5s;
+}
+.img1:hover{
+	width:230px;
+	height:230;
+	transition:0.5s;
+}
+.img2:hover{
+	width:230px;
+	height:230;
+	transition:0.5s;
+}
+.img3:hover{
+	width:230px;
+	height:230;
+	transition:0.5s;
+}
+.petakonsep{
+	width:27%;
+	height:350px;
+	background-color: white;
+	margin:2%;
+	float:left;
+	text-align: center;
+	padding-top:0px;
+}
+.ki{
+	width:22%;
+	height:300px;
+	background-color: white;
+	margin:2%;
+	float:left;
+	text-align: justify;
+	padding:50px;
+	padding-top:0px;
+	overflow-y:auto;
+}
+.kd{
+	width:22%;
+	height: 300px;
+	background-color: white;
+	margin:2%;
+	float:left;
+	text-align: justify;
+	padding:50px;
+	padding-top:0px;
+	overflow-y:auto;
+}
+.data{
+	width:33%;
+	height:400px;
+	background-color:powderblue;
+	float:left;
+	padding-top:0px;
+}
+.tabel{
+	width:33%;
+	height:400px;
+	background-color:powderblue;
+	float:left; 
+	padding-top:0px;
+}
+.diagram{
+	width:33%;
+	height:400px;
+	background-color:powderblue;
+	float:left; 
+	padding-top:0px;
+}
+
+.konten{
+	height: 680px;
+	background-color: white;
+	float:left;
+
+}
+.materi1{
+	margin-left:50px;
+	font-family: 'Roboto Mono', monospace;	
+}
+.tombol{
+	background-color:#04aa6d;
+			  color: white;
+			  padding: 5px 5px;
+			  border: none;
+			  cursor: pointer;
+			  width: 100px;
+			  font-size:13px;
+			  font-family: monospace;
+  }

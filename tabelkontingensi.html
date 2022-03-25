@@ -1,0 +1,279 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>PETA - Penyajian Data</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="boostrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        td, th {
+        border: 1px solid black;
+        text-align: center;
+        padding: 8px;
+        }
+
+        input[type=baru] {
+			width: 110px;
+			
+			border: 1px solid black;
+			box-sizing: box;
+        }
+    
+    </style>
+  <script>
+    window.onload= function awal(){
+      document.getElementById("nalar").hidden=true;
+    }
+  </script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">PETA</a>
+      
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item ">
+                <a data-toggle="collapse" class="nav-link" href="#">
+                  <span data-feather="file"></span>
+
+                  <a class="nav-link dropdown-toggle" href="#">
+                    <span data-feather="bar-chart-2"></span>
+                  Data
+                  </a>
+
+                  <ul style="list-style: none;">
+                    <a href="data.html" style="color: black;"> <li class="">Mengenal Data</li></a>
+                    <a href="kuis_1/latihan.html" style="color: black;"> <li class="">Kuis</li></a>
+                  </ul>
+                </a>
+             </li>
+              <li class="nav-item ">
+                <a class="nav-link dropdown-toggle active" href="#">
+                  <span data-feather="columns"></span>
+                  Tabel
+                </a>
+                <ul style="list-style: none;">
+                  <a href="tabelbariskolom.html" style="color: black;"> <li class="">Baris Kolom</li></a>
+                  <a href="tabelkontingensi.html" style="color: rgb(71, 181, 196);"> <li class="nav-link coba active">Kontingensi</li></a>
+                  <a href="tabelfrekuensi.html" style="color: black;"> <li class="">Distribusi Frekuensi</li></a>
+                  <a href ="loginkuistabel.html" style="color:black"><li class="">Kuis</li></a>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Diagram
+                </a>
+                <ul style="list-style: none;">
+                    <a href ="diagrambatang.html" style="color:black"> <li class="">Diagram Batang</li></a>
+                    <a href ="diagramgaris.html" style="color:black"> <li class="">Diagram Garis</li></a>
+                    <a href ="diagramlingkaran2.html" style="color:black"> <li class="">Diagram Lingkaran</li></a>
+                    <a href ="kuis_diagram/latihan_diagram.html" style="color:black"><li class="">Kuis</li></a>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a data-toggle="collapse" class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  Evaluasi<span class="sr-only"></span>
+                </a>
+                <ul style="list-style: none;">
+                  <a href ="kuis_evaluasi/latihan_evaluasi.html" style="color:black"><li class="">Evaluasi</li></a>
+                </ul>
+             </li>
+              
+            </ul>
+
+            
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2" style="font-family: Apple Chancery, cursive;">Menyajikan Data dalam Bentuk Tabel</h1>
+          
+          </div>
+          <div class="row">
+            <div id="kontenkiri"  class="col-sm">
+              <p style="background-color: #04AA6D;color: whitesmoke;text-align: center;font-size: 30px;">
+                TABEL KONTIGENSI
+              </p>
+              <div id="kotak" style="padding-left:20px;">Tujuan Pembelajaran</div>
+              <div class="isko" >
+                <ul><li>Siswa dapat menyajikan data dalam bentuk tabel</li></ul>
+              </div>
+              <br> 
+                    <p style="text-indent: 30px;">Tabel ini digunakan untuk data yang <b>lebih dari satu kolom </b>. Contoh berikut adalah tabel Kontingensi (3 x 2), artinya terdiri dari 3 baris dan 2 kolom.
+                        Berbeda dengan tabel baris dan kolom, tabel kontingensi digunakan untuk data yang memiliki lebih dari satu kategori/kelompok. Coba lihat <a href ="#Tabel3" onclick="tampil()">tabel</a> disamping. Di tabel tersebut, diketahui data jumlah siswa kelas 7 berdasarkan jenis kelaminnya. Nah, data tersebut memiliki dua kategori, yaitu kelas dan jenis kelamin.
+                    </p>  
+                                 
+              <center>    
+                  <p style="background-color: #04AA6D;color: whitesmoke;font-size: 20px;text-align: center;">AYO MENALAR</p>
+              </center>
+                    <p>Perhatikan Data nilai rata rata Ujian Nasional dari SMP X di tahun 2011 sampai 2013.  buatlah data tersebut dalam tabel kontingensi !</p>
+                    <ol>
+                        <li>Pada tahun 2011</li>
+                        <p>Mata pelajaran Bahasa Indonesia mendapat nilai rata-rata 8.37, Matematika mendapat nilai rata-rata 9.02 , IPA mendapat nilai rata-rata 8.67.</p> 
+                        <li>Pada tahun 2012</li>
+                        <p>Mata pelajaran Bahasa Indonesia mendapat nilai rata-rata 8.86, Matematika mendapat nilai rata-rata 8.89 , IPA mendapat nilai rata-rata 8.90.</p>
+                        <li>Pada tahun 2013</li>
+                        <p>Mata pelajaran Bahasa Indonesia mendapat nilai rata-rata 8.73, Matematika mendapat nilai rata-rata 9.20 , IPA mendapat nilai rata-rata 9.00.</p>
+                    </ol>
+                    <p>Untuk mengerjakan soal diatas silahkan klik <a style="color: green;" href ="#Tabel4" onclick="tampil3()">KERJAKAN</a>
+                    </p>                    
+                    <br>
+            </div>
+            <div id="kontenkanan" class="col-sm" >
+              <br>
+              <div id="menampilkan2" style="display: none;">
+              <b><center><p style="font-style: italic;text-align: center;">Tabel 3 Jumlah Siswa Kelas 7 Berdasarkan Jenis Kelamin</p></center></b>              
+                <table>
+                  <thead style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;">
+                    <tr>                   
+                      <th>Kelas / Katergori</th>
+                      <th>Laki-laki</th>
+                      <th>Perempuan</th>
+                    </tr>
+                  </thead>
+                  <tbody style="font-family: Apple Chancery, cursive;">
+                    <tr>                     
+                      <td>7A</td>
+                      <td>13</td>
+                      <td>17</td>
+                    </tr>
+                    <tr>                     
+                      <td>7B</td>
+                      <td>15</td>
+                      <td>16</td>
+                    </tr>
+                    <tr>
+                      <td>7C</td>
+                      <td>12</td>
+                      <td>17</td>
+                    </tr>
+                    <tr>                     
+                      <td>7D</td>
+                      <td>14</td>
+                      <td>18</td>
+                    </tr>                      
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <div id="menampilkan3" style="display: none;">
+                <div style="border-color: solid black;border-style: groove;">
+                  <p style="color: red;">Petunjuk:</p>
+                  <ul>                    
+                    <li>Isi semua kolom dibawah dengan jawaban yang dianggap benar sesuai pertanyaan disebelah kiri </li>
+                    <li>Untuk mata pelajaran Bahasa Indonesia, isi pada kolom 1 baris 1</li>
+                    <li>Untuk mata pelajaran Matematika, isi pada kolom 1 baris 2</li>
+                    <li>Untuk mata pelajaran IPA, isi pada kolom 1 baris 3</li>
+                    <li>Untuk mengisi tahun ajaran, isi dengan nilai rata-rata masing masing mata pelajaran sesuai tahun</li>
+                    <li>Kemudian klik periksa jawaban</li>
+                    <li>Jika kolom berwarna <a style="color:green">hijau</a>, maka jawaban <b>benar</b></li>
+                    <li>Jika kolom berwarna <a style="color:red">merah</a>, maka jawaban <b>salah</b></li>
+                    <li>Klik ulang, jika ingin mengulang menjawab </li>
+                  </ul>
+                </div>
+                <br>
+              <table>
+                <tr style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;">
+                 <th rowspan="2"><center>Mata Pelajaran</center></th>
+                 <th colspan="3"><center>Tahun Ajaran</center></th>
+                </tr>
+                <tr style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;">
+                 <th><center>2011</center></th>
+                 <th><center>2012</center></th>
+                 <th><center>2013</center></th>
+                </tr>
+                <tr>
+                 <td><center><input class="a" type="baru" id="tabel21" type="text"></center></td>
+                 <td><center><input class="a" type="baru" id="tabel22" type="text"></center></td>
+                 <td><center><input class="a" type="baru" id="tabel23" type="text"></center></td>
+                 <td><center><input class="a" type="baru" id="tabel24" type="text"></center></td>
+                </tr>
+                <tr>
+                 <td><center><input class="a" type="baru" id="tabel31" type="text"></center></td>
+                 <td><center><input class="a" type="baru" id="tabel32" type="text"></center></td>
+                 <td><center><input class="a" type="baru" id="tabel33" type="text"></center></td>
+                 <td><center><input class="a" type="baru" id="tabel34" type="text"></center></td>
+                </tr>
+                <tr>
+                 <td><center><input class="a" type="baru" id="tabel41" type="text"></center></td>
+                 <td><center><input class="a" type="baru" id="tabel42" type="text"></center></td>
+                 <td><center><input class="a" type="baru" id="tabel43" type="text"></center></td>
+                 <td><center><input class="a" type="baru" id="tabel44" type="text"></center></td>
+                </tr>                        
+            </table>
+            <br>
+            <center>
+              <button class style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;"button-pertanyaan" onclick="cek()"> Periksa Jawaban</button>
+              <!-- <p id="tampil"></p> -->
+
+              <button class style="background-color: #04AA6D;color: whitesmoke;font-family: Apple Chancery, cursive;"button-pertanyaan" onclick="Ulang()">Ulang</button>
+              <br><br>
+            </center>
+            </div>
+            </div>                    
+        </main>        
+      </div>      
+    </div>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      function tampil(){
+        document.getElementById("menampilkan2").style.display="block";
+      }
+    </script>
+    <script>
+      function tampil3(){
+        document.getElementById("menampilkan3").style.display="block";
+      }
+    </script>
+    <script>
+      
+    </script>
+    <script src="pertanyaan2.js"></script>
+
+  </body>
+  <footer>
+    <br>
+    <center style="margin-right: 50px;margin-left:20px;">
+    <a href="tabelbariskolom.html"><button class="tombol" style="background-color: #04AA6D;color: whitesmoke;">Sebelumnya</button></a>
+  
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="tabelfrekuensi.html"><button class="tombol" style="float: right;margin-right:200px;background-color: #04AA6D;color: whitesmoke;">Selanjutnya</button></a>
+  </center>
+  </footer>
+</html>
